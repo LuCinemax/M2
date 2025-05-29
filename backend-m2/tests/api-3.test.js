@@ -11,8 +11,8 @@ describe("POST /api/quote", () => {
 
     expect(res.statusCode).toBe(200);
     expect(res.body).toEqual({
-      monthly_premium: "$20",
-      yearly_premium: "$240",
+      monthly_premium: "20",
+      yearly_premium: "240",
     });
   });
 
@@ -26,8 +26,8 @@ describe("POST /api/quote", () => {
 
     expect(res.statusCode).toBe(200);
     expect(res.body).toEqual({
-  monthly_premium: "$0",
-  yearly_premium: "$0.01",
+  monthly_premium: "0",
+  yearly_premium: "0.01",
 });
   });
 
@@ -39,8 +39,8 @@ describe("POST /api/quote", () => {
 
     expect(res.statusCode).toBe(200);
     expect(res.body).toEqual({
-      monthly_premium: "$4166.67",
-      yearly_premium: "$50000",
+      monthly_premium: "4166.67",
+      yearly_premium: "50000",
     });
   });
 
@@ -54,8 +54,8 @@ describe("POST /api/quote", () => {
 
     expect(res.statusCode).toBe(200);
     expect(res.body).toEqual({
-      monthly_premium: "$0",
-      yearly_premium: "$0.0001",
+      monthly_premium: "0",
+      yearly_premium: "0.0001",
     });
   });
 
